@@ -12,8 +12,21 @@ import love1 from './assets/love1.jpg';
 import love2 from './assets/love2.jpg';
 import rom from './assets/rom.jpg';
 import rom2 from './assets/rom2.jpg';
+import styled, { createGlobalStyle } from 'styled-components';
+
 
 const DeepLove = () => {
+
+  const LoveTitle = styled.h1`
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive; /* A love font */
+  color: #e4007f; /* Love red/pink */
+  margin-bottom: 20px;
+
+  @media (max-width: 600px) {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+`;
   const sections = [
     {
       date: 'MAY-2023',
@@ -48,6 +61,7 @@ const DeepLove = () => {
   ];
 
   return (
+    <>
     <div className="deep-love-container">
       {sections.map((section, index) => (
         <div key={index} className="section">
@@ -64,6 +78,9 @@ const DeepLove = () => {
         </div>
       ))}
     </div>
+
+<LoveTitle className='center-text'>Love Your Infinite my Darling drashtuuuuuuuuuuuuuuuuu😘🫶</LoveTitle>
+</>
   );
 };
 
