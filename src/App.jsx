@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-route
 import styled, { createGlobalStyle } from 'styled-components';
 import hdHand from './assets/hand.png'; // Your image
 import LoveStory from './LoveStory'; // Import the LoveStory component
+import DeepLove from './DeepLove';
 
 // Global Styles
 const GlobalStyle = createGlobalStyle`
@@ -151,6 +152,7 @@ function AppWrapper() {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/love-story" element={<LoveStory />} />
+        <Route path="/deep-love" element={<DeepLove />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f9e7e1, #f7c3c9);
+  color: #333;
+  height: 100%; /* Ensure the body takes up full height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Ensure the container allows scrolling */
+.deep-love-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  min-height: 100vh; /* Ensure minimum height to trigger scrolling */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+  
+  /* Section Styles */
+  .section {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .section-header {
+    margin-bottom: 20px;
+  }
+  
+  .section-date {
+    font-size: 1.8rem;
+    color: #ff6b81;
+    margin-bottom: 10px;
+  }
+  
+  .section-place {
+    font-size: 1.5rem;
+    color: #e63946;
+    margin-bottom: 5px;
+  }
+  
+  .section-activity {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #555;
+  }
+  
+  /* Images Layout */
+  .section-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .section-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 127, 0.3);
+  }
+  
+  .section-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 0, 127, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-date {
+      font-size: 1.5rem;
+    }
+  
+    .section-place {
+      font-size: 1.2rem;
+    }
+  
+    .section-activity {
+      font-size: 1rem;
+    }
+  
+    .section-image {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-date {
+      font-size: 1.2rem;
+    }
+  
+    .section-place {
+      font-size: 1rem;
+    }
+  
+    .section-activity {
+      font-size: 0.9rem;
+    }
+  
+    .section-image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
